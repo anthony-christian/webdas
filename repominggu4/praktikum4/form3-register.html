@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi</title>
+</head>
+<body>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Registrasi</legend>
+        <p>
+            <label>Nama Lengkap (<i>Fullname</i>):</label>
+            <input type="text" name="fullname" placeholder="Nama Lengkap (Fullname) Anda" />
+        </p>
+        <p>
+            <label>Nama Pengguna (<i>Username</i>):</label>
+            <input type="text" name="username" placeholder="Nama Pengguna (Username) Anda" />
+        </p>
+        <p>
+            <label>Alamat Surat Elektronik (<i>Electronic Mail Address</i>):</label>
+            <input type="email" name="email" placeholder="Alamat Surat Elektronik (Electronic Mail Address) Anda" />
+        </p>
+        <p>
+            <label>Kata Sandi (Password):</label>
+            <input type="password" name="password" placeholder="Kata Sandi (Password) Anda" />
+        </p>
+        <p>
+            <label>Jenis Kelamin (<i>Gender</i>):</label>
+            <label><input type="radio" name="gender" value="laki-laki" /> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+            <label>Agama (<i>Religion</i>):</label>
+            <select name="religion">
+                <option value="islam">Islam</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="kristen">Kristen</option>
+                <option value="katolik">Katolik</option>
+                <option value="konghucu">Konghucu</option>
+            </select>
+        </p>
+        <p>
+            <label>Biografi (<i>Biography</i>):</label>
+            <textarea name="biography"></textarea>
+        </p>
+        <p>
+            <label>Alamat Web (<i>Website</i>):</label>
+            <input type="url" name="website" placeholder="Masukkan URL Alamat Web (Website)" />
+        </p>
+        <p>
+            <label>Tanggal Lahir (<i>Date of Birth</i>):</label>
+            <input type="date" name="birthdate" />
+        </p>
+        <p>
+            <label>Umur (<i>Age</i>):</label>
+            <input type="number" min="1" max="100" name="age" />
+        </p>
+        <br>
+        <br>
+        <br>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
