@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Tabel (Table) HTML (Hypertext Markup Language)</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid black;
+                text-align: center;
+                padding: 5px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Tabel (<i>Table</i>) HTML (<i>Hypertext Markup Language</i>)</h1>
+        <hr>
+        <p style="text-align: justify;">
+            Tabel (<i>Table</i>) HTML memungkinkan pengembang web untuk mengatur data menjadi baris (<i>row</i>) dan kolom (<i>column</i>).
+            <br>
+            <br>
+            Tag <<i>table</i>> mendefinisikan sebuah tabel (<i>table</i>) HTML.
+            <br>
+            Setiap baris tabel (<i>table row</i>) didefinisikan dengan tag <<i>tr</i>>.
+            <br>
+            Setiap tajuk tabel atau judul tabel (<i>table header</i>) didefinisikan dengan tag <<i>th</i>>.
+            <br>
+            Setiap sel tabel data (<i>table data</i>) didefinisikan dengan tag <<i>td</i>>.
+            <br>
+            <br>
+            Secara default, teks dalam tajuk tabel atau judul tabel (<i>table header</i>) yang didefinisikan dengan tag <<i>th</i>> elemen akan dicetak tebal (<i>Bold</i>) dan berada di posisi tengah (<i>Center</i>).
+            <br>
+            Secara default, teks dalam sel tabel data (<i>table data</i>) yang didefinisikan dengan tag <<i>td</i>> elemen akan beraturan dan dicetak di posisi rata kiri (<i>Left</i>).
+            <br>
+            Untuk mengatur perataan teks (<i>text alignment</i>) pada tabel, maka gunakan <i>text-align</i> properti dari CSS.
+            <br>
+            <br>
+            Untuk menambahkan garis pembatas ke dalam tabel, maka tambahkan <i>border</i> properti dari CSS.
+            <br>
+            Untuk membuat garis pembatas menjadi satu garis pembatas, maka gunakan <i>border-collapse</i> properti dari CSS.
+            <br>
+            <i>Padding</i> merupakan pengisi sel tabel data (<i>table data</i>) yang menentukan ruang antara konten sel tabel data (<i>table data</i>) dengan garis pembatasnya.
+            Jika Anda tidak menentukan <i>padding</i>, maka sel tabel data (<i>table data</i>) akan ditampilkan tanpa adanya <i>padding</i>.
+            Untuk mengatur dan menentukan <i>padding</i>, maka gunakan <<i>padding</i>> properti dari CSS.
+            <br>
+            Spasi perbatasan (<i>border spacing</i>) akan menentukan jarak antarsel tabel data (<i>table data</i>).
+            Untuk mengatur spasi perbatasan (<i>border spacing</i>) pada tabel, maka gunakan <i>border-spacing</i> properti dari CSS.
+            <br>
+            Untuk membuat rentang sel tabel data (<i>table data</i>) menjadi lebih dari satu kolom, maka gunakan tag atribut <i>colspan</i>.
+            <br>
+            Untuk membuat rentang sel tabel data (<i>table data</i>) menjadi lebih dari satu baris, maka gunakan tag atribut <i>rowspan</i>.
+            <br>
+            Untuk menambahkan keterangan ke dalam tabel, maka gunakan tag atribut <<i>caption</i>>.
+        </p>
+        <hr>
+        <p style="text-align: justify;">
+            Berikut ini merupakan contoh implementasi atau penerapan dari Tabel (<i>Table</i>) HTML (<i>Hypertext Markup Language</i>), adalah sebagai berikut.
+        </p>
+        <br>
+        <table>
+            <tr>
+                <th>Nama Mahasiswa</th>
+                <th>Nomor Induk Mahasiswa (NIM)</th>
+                <th>Kelompok Mahasiswa</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>A11.2014.11111</td>
+                <td>A11.4301</td>
+            </tr>
+            <tr>
+                <td>Centro Comercial Moctezuma</td>
+                <td>A12.2015.22222</td>
+                <td>A12.4302</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>A13.2016.33333</td>
+                <td>A13.4303</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>B11.2017.44444</td>
+                <td>B11.4304</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>B12.2018.55555</td>
+                <td>B12.4305</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>B13.2019.66666</td>
+                <td>B13.4506</td>
+            </tr>
+        </table>
+    </body>
+</html>
