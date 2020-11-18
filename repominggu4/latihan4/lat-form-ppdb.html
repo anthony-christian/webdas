@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir Pendaftaran Penerimaan Peserta Didik Baru (PPDB) Jalur Zonasi Tahun 2020</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif";>FORMULIR PENERIMAAN PESERTA DIDIK BARU (PPDB) JALUR ZONASI TAHUN 2020</h2>
+        <form>
+            <table>
+                <tr>
+                    <th>Nomor</th>
+                    <td colspan="5" style="width: 100%;"><b>INFO PENDAFTARAN</b></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td colspan="2";>NISN (Nomor Induk Siswa Nasional)</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="nisn" placeholder="Masukkan 10 Digit NISN (Nomor Induk Siswa Nasional) Anda" minlength="10" maxlength="10" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">2</td>
+                    <td colspan="2";>Asal Sekolah</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="asal_sekolah" placeholder="Masukkan Asal Sekolah Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">3</td>
+                    <td colspan="2";>Tahun Lulus</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td>
+                        <input type="number" min="1920" max="2020" name="tahun_lulus" placeholder="Pilihlah Tahun Lulus Anda" style="width: 200px; height: 20px; border: hidden;" />
+                        <label><i>(Lampirkan Fotokopi Ijazah)</i></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6"><b>DATA CALON PESERTA DIDIK BARU</b></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">4</td>
+                    <td colspan="2";>Nama Lengkap</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="nama_lengkap" placeholder="Masukkan Nama Lengkap Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">5</td>
+                    <td colspan="2";>NIK (Nomor Induk Keluarga)</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="nik" placeholder="Masukkan 16 Digit NIK (Nomor Induk Keluarga) Anda" minlength="16" maxlength="16" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">6</td>
+                    <td colspan="2";>Tempat dan Tanggal Lahir</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2">
+                        <label>Tempat Lahir:</label>
+                        <input type="text" name="tempat_lahir" placeholder="Masukkan Tempat Lahir Anda" style="width: 200px; height: 20px; border: hidden;" />
+                        <label>Tanggal Lahir:</label>
+                        <input type="date" name="tanggal_lahir" style="height: 20px; border: hidden;" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"></td>
+                    <td colspan="5"><i>(Lampirkan Fotokopi Akte Kelahiran Yang Telah Dilegalisir)</i></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">7</td>
+                    <td colspan="2";>Jenis Kelamin</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2">
+                        <p>
+                            <label><input type="radio" name="jenis_kelamin" value="laki-laki"/> Laki-Laki</label>
+                            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">8</td>
+                    <td colspan="2";>Alamat Tempat Tinggal</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="alamat_pdb" placeholder="Masukkan Alamat Tempat Tinggal Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">9</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Desa / Kelurahan</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="desa_kelurahan_alamat_pdb" placeholder="Masukkan Desa / Kelurahan Alamat Tempat Tinggal Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">10</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Kecamatan</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="kecamatan_alamat_pdb" placeholder="Masukkan Kecamatan Alamat Tempat Tinggal Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">11</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Kota / Kabupaten</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="kota_kabupaten_alamat_pdb" placeholder="Masukkan Kota / Kabupaten Alamat Tempat Tinggal Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">12</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Provinsi</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="provinsi_alamat_pdb" placeholder="Masukkan Provinsi Alamat Tempat Tinggal Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">13</td>
+                    <td colspan="2";>Alamat E-mail Aktif</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="email" name="email" placeholder="Masukkan Alamat E-mail Aktif Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td colspan="6"><b>DATA ORANG TUA <i>(Lampirkan Kartu Keluarga)</i></b></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">14</td>
+                    <td colspan="2";>Nomor KK (Kartu Keluarga)</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="kk" placeholder="Masukkan 16 Digit Nomor KK (Kartu Keluarga) Anda" minlength="16" maxlength="16" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">15</td>
+                    <td colspan="2";>Nama Ayah Kandung</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="nama_ayah_kandung" placeholder="Masukkan Nama Ayah Kandung Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">16</td>
+                    <td colspan="2";>Nama Ibu Kandung</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="nama_ibu_kandung" placeholder="Masukkan Nama Ibu Kandung Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">17</td>
+                    <td colspan="2";>Agama Orang Tua</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2">
+                        <select name="agama" style="width: 100px; height: 20px; border: hidden;">
+                            <option value="islam">Islam</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">18</td>
+                    <td colspan="2";>Pekerjaan Orang Tua</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="pekerjaan" placeholder="Masukkan Pekerjaan Orang Tua Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">19</td>
+                    <td colspan="2";>Alamat Orang Tua</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="alamat_ortu" placeholder="Masukkan Alamat Tempat Tinggal Orang Tua Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">20</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Desa / Kelurahan</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="desa_kelurahan_alamat_ortu" placeholder="Masukkan Desa / Kelurahan Alamat Tempat Tinggal Orang Tua Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">21</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Kecamatan</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="kecamatan_alamat_ortu" placeholder="Masukkan Kecamatan Alamat Tempat Tinggal Orang Tua Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">22</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Kota / Kabupaten</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="kota_kabupaten_alamat_ortu" placeholder="Masukkan Kota / Kabupaten Alamat Tempat Tinggal Orang Tua Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">23</td>
+                    <td style="width: 120px; border-right: hidden;"></td>
+                    <td>Provinsi</td>
+                    <td style="border-left: hidden; border-right: hidden;">:</td>
+                    <td colspan="2"><input type="text" name="provinsi_alamat_ortu" placeholder="Masukkan Provinsi Alamat Tempat Tinggal Orang Tua Anda" style="width: 800px; height: 20px; border: hidden;" /></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <p style="font-family: Arial, Helvetica, sans-serif; text-align: justify;">
+                Dengan menekan tombol "Daftar Peserta Didik Baru (PPDB) Jalur Zonasi Tahun 2020" dibawah ini, maka Anda menyatakan bahwa :
+            </p>
+                <ol style="font-family: Arial, Helvetica, sans-serif; text-align: justify;">
+                    <li>
+                        Seluruh pernyataan data dan informasi beserta dengan seluruh dokumen yang Anda lampirkan dalam
+                        Formulir Pendaftaran Penerimaan Peserta Didik Baru (PPDB) Jalur Zonasi Tahun 2020 adalah benar.
+                    </li>
+                    <li>
+                        Apabila diperlukan, Anda wajib dan harus bersedia untuk memberikan informasi lebih lanjut untuk melengkapi dokumen
+                        Formulir Pendaftaran Penerimaan Peserta Didik Baru (PPDB) Jalur Zonasi Tahun 2020 ini.
+                    </li>
+                </ol>
+                <p style="font-family: Arial, Helvetica, sans-serif; text-align: justify;">
+                Demikian pernyataan ini dibuat dengan sebenar-benarnya dan penuh rasa tanggung jawab.
+                Apabila dikemudian hari ditemukan bahwa data dan informasi atau dokumen yang Anda sampaikan tidak benar dan/atau ada pemalsuan,
+                maka seluruh keputusan yang telah ditetapkan berdasarkan Formulir Pendaftaran Penerimaan Peserta Didik Baru (PPDB) Jalur Zonasi Tahun 2020 tersebut
+                batal berdasarkan hukum dan Anda akan dikenakan sanksi sesuai dengan ketentuan peraturan perundang-undangan yang berlaku.
+            </p>
+            <br>
+            <p style="text-align: center;">
+                <input type="submit" name="submit" value="Daftar Peserta Didik Baru (PPDB) Jalur Zonasi Tahun 2020" />
+            </p>
+        </form>
+    </body>
+</html>
