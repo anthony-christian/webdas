@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Perulangan Bersarang (Nested Loop)</title>
+    </head>
+
+    <body>
+        <script>
+            var repeat = confirm("Apakah Anda ingin melakukan perulangan kembali?");
+            var counter = 0;
+
+            while (repeat) {
+                counter++;
+                var star = "*".repeat(counter);
+                document.write("<h1>" + counter + " = " + star + "<br/></h1>");
+                repeat = confirm("Apakah Anda ingin melakukan perulangan kembali?");
+            }
+        </script>
+    </body>
+</html>

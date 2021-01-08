@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Perulangan Do / While (Uncounted Loop)</title>
+    </head>
+
+    <body>
+        <script>
+            var repeat = confirm("Apakah Anda ingin melakukan perulangan kembali?");
+            var counter = 0;
+
+            do {
+                counter++;
+                repeat = confirm("Apakah Anda ingin melakukan perulangan kembali?");
+            }
+            while (repeat)
+
+            document.write("<h1>Perulangan sudah dilakukan sebanyak " + counter + " kali.</h1>");
+        </script>
+    </body>
+</html>

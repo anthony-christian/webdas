@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Percabangan Switch / Case</title>
+    </head>
+
+    <body>
+        <script>
+            var answer = prompt("Selamat Anda Beruntung :)! Silahkan Anda Pilih Hadiah Anda dengan Memasukkan Salah Satu Angka Dimulai dari Angka 1 sampai dengan Angka 5 :");
+            var reward = "";
+
+            switch (answer) {
+                case "1":
+                    reward = "Tissue";
+                    break;
+                case "2":
+                    reward = "Kopi";
+                    break;
+                case "3":
+                    reward = "Teh";
+                    break;
+                case "4":
+                    reward = "Minyak Goreng";
+                    break;
+                case "5":
+                    reward = "Uang Nominal Rp 50.000,00";
+                    break;
+                default:
+                    document.write("<h2>Pilihan Angka Anda Salah! Silahkan Anda Masukkan Salah Satu Angka Dimulai dari Angka 1 sampai dengan Angka 5!</h2>")
+            }
+
+            if (reward === "") {
+                document.write("<h2>Mohon Maaf... Anda Gagal Mendapatkan Hadiah!</h2>")
+            }
+
+            else {
+                document.write("<h2>Selamat Anda Mendapatkan Hadiah Berupa " + reward + ".</h2>")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menghapus Data Array pada Bagian Depan</title>
+    </head>
+
+    <body>
+        <script>
+            var bunga = ["Mawar", "Melati", "Anggrek", "Sakura"]
+
+            bunga.shift();
+
+            document.write("<h1>Daftar Bunga :</h1>");
+            document.write("<ol>");
+            
+            for (let i = 0; i < bunga.length; i++) {
+                document.write(`<h3><li>${bunga[i]}</li></h3>`);
+            }
+
+            document.write("</ol>");
+        </script>
+    </body>
+</html>

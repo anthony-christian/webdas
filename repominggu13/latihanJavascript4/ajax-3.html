@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Belajar Dasar Penggunaan AJAX pada Javascript</title>
+    </head>
+
+    <body>
+        <h1>Mengirim Data dengan Menggunakan AJAX</h1>
+
+        <form method="POST" onsubmit="return sendData ()">
+            <p>
+                <label>Title</label>
+                <input type="text" id="title" placeholder="Judul Artikel">
+            </p>
+
+            <p>
+                <label>Isi Artikel</label>
+                <br>
+                <textarea id="body" placeholder="Isi Artikel" cols="50" rows="10"></textarea>
+            </p>
+
+            <input type="submit" value="Kirim" />
+        </form>
+
+        <script>
+            function sendData () {
+                var XHR = new XMLHttpRequest ();
+                var URL = "https://jsonplaceholder.typicode.com/posts";
+
+                var data = JSON.stringify ({
+                    title: document.getElementById("title").value,
+                    body: document.getElementById("body").value,
+                    userId: 1
+                });
+
+                XHR.open ("POST", URL, true);
+                XHR.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
+                XHR.onload = function () {
+                    console.log (this.responseText);
+                };
+
+                XHR.send (data);
+                return false;
+            }
+        </script>
+    </body>
+</html>

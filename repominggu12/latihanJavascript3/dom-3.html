@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Document Object Model (DOM) Application Programming Interface (API) Javascript</title>
+    </head>
+    
+    <body>
+        <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+
+        <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+
+        <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni,
+            maiores in?
+        </p>
+
+        <script>
+            var paragraph = document.getElementsByClassName("paragraph");
+
+            setInterval (function () {
+                paragraph[0].style.color = "red";
+                paragraph[1].style.color = "green";
+                paragraph[2].style.color = "blue";
+
+                setTimeout (function () {
+                    paragraph[0].style.color = "black";
+                    paragraph[1].style.color = "black";
+                    paragraph[2].style.color = "black";
+                }, 500);
+            }, 1000);
+
+            // Pada kode program diatas, rentang waktu (interval) yang diberikan adalah selama 1000 milidetik atau 1 detik, sedangkan untuk mengubah warnanya menjadi warna hitam, diberikan waktu selama 500 milidetik atau 0.5 detik.
+        </script>
+    </body>
+</html>

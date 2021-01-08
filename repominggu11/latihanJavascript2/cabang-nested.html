@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Percabangan Bersarang (Nested)</title>
+    </head>
+
+    <body>
+        <script>
+            var username = prompt("Masukkan Nama Pengguna (Username) Anda :");
+            var password = prompt("Masukkan Kata Sandi (Password) Anda :");
+
+            if (username == "belajarkode") {
+                if (password == "javascript") {
+                    document.write("<h1>Selamat Datang!</h1>");
+                }
+
+                else {
+                    document.write("<h1>Mohon Maaf... Kata Sandi (<i>Password</i>) Anda Salah! Silahkan Anda Coba Lagi!");
+                }
+            }
+
+            else {
+                document.write("<h1>Mohon Maaf... Nama Pengguna (<i>Username</i>) Anda Tidak Terdaftar!</h1>")
+            }
+        </script>
+    </body>
+</html>

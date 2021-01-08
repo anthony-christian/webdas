@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dialog Confirm</title>
+    </head>
+
+    <body>
+        <script>
+            var sure = confirm("Apakah Anda yakin akan mengunjungi website dari Universitas Dian Nuswantoro (UDINUS)?");
+
+            if (sure) {
+                window.location = "http://dinus.ac.id/";
+            }
+            
+            else {
+                document.write("Tetap disini saja juga tidak apa-apa :).");
+            }
+        </script>
+    </body>
+</html>

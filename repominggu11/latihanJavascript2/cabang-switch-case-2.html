@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Percabangan Switch / Case</title>
+    </head>
+
+    <body>
+        <script>
+            var score = prompt("Masukkan Nilai Akhir Anda :");
+            var grade = "";
+
+            switch(true) {
+                case score >= 90:
+                    grade = "A";
+                    break;
+                case score >= 80:
+                    grade = "B+";
+                    break;
+                case score >= 70:
+                    grade = "B";
+                    break;
+                case score >= 60:
+                    grade = "C+";
+                    break;
+                case score >= 50:
+                    grade = "C";
+                    break;
+                case score >= 40:
+                    grade = "D";
+                    break;
+                case score >= 30:
+                    grade = "E";
+                    break;
+                default:
+                    grade = "F";
+            }
+            
+            document.write(`<h1>Grade Anda adalah ${grade}.</h1>`);
+        </script>
+    </body>
+</html>
